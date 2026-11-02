@@ -1,6 +1,6 @@
-package vn.udn.ute.datphong.moddel
+package vn.edu.ute.datphong.model
 import java.io.Serializable
-data class DonDatPhong (
+data class DonDatPhong(
     val hoten: String,
     val sdt:String,
     val email:String,
