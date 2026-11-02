@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import vn.edu.ute.datphong.R
+import com.example.ngocquy_2415053122235.R
 import vn.edu.ute.datphong.helper.DatPhongHelper
 import vn.edu.ute.datphong.helper.dinhDangTien
 import vn.edu.ute.datphong.model.DonDatPhong
@@ -35,7 +35,7 @@ class XacNhanActivity : AppCompatActivity() {
             val loai = DatPhongHelper.timLoaiPhong(don.maLoaiPhong)
             val tenLoai = loai?.ten ?: don.maLoaiPhong
 
-            txtHoTen.text = "Họ tên: ${don.hoTen}"
+            txtHoTen.text = "Họ tên: ${don.hoten}"
             txtSdt.text = "Số điện thoại: ${don.sdt}"
             txtEmail.text = "Email: ${don.email}"
             txtLoaiPhong.text = "Loại phòng: $tenLoai"

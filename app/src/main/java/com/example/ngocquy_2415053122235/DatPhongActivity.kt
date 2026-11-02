@@ -12,7 +12,7 @@ import androidx.core.widget.doAfterTextChanged
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import vn.edu.ute.datphong.R
+import com.example.ngocquy_2415053122235.R
 import vn.edu.ute.datphong.data.DuLieuMau
 import vn.edu.ute.datphong.helper.DatPhongHelper
 import vn.edu.ute.datphong.helper.KiemTraHelper
@@ -147,7 +147,7 @@ class DatPhongActivity : AppCompatActivity() {
 
         var hopLe = true
 
-        if (!KiemTraHelper.kiemTraHoTen(hoTen)) {
+        if (!KiemTraHelper.kiemtraHoTen(hoTen)) {
             tilHoTen.error = "Họ tên phải ít nhất 2 từ, chỉ chứa chữ cái"
             hopLe = false
         } else tilHoTen.error = null
